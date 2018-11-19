@@ -1,0 +1,20 @@
+- randomly generate user defined number of passengers with a random destination and floor
+- Array of passenger calls that need to be handled with generated from passengers within for loop
+- [1,2,3,4,5]
+- pick up passengers going in the same direction ()
+
+{(Passenger 1, Start 1, Destination 5,up),
+ (Passenger 2, Start 3, Destination 1,down),
+ (Passenger 3, Start 3, Destination 10,up),
+ (Passenger 4, Start 3, Destination 2,down),
+ (Passenger 5, Start 2, Destination 4,up),
+ (Passenger 6, Start 2, Destination 7,up),
+ (Passenger 7, Start 5, Destination 3,down)}
+
+Strategy
+
+If elevator is going up:
+  destination is max(maximum destination of passengers goin up,
+                    maximum starting floor of passengers going down)
+If elevator going down:
+  the reverse
